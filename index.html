@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simple HTML E-Commerce Demo</title>
+</head>
+<body>
+
+  <h1>Simple E-Commerce Store (HTML only)</h1>
+  <p>This is a demo store built using only HTML. Select items, set quantities, provide your details, and click <strong>Checkout — Send Order</strong>. This will open your email client with the order (uses <code>mailto:</code>).</p>
+
+
+    <h2>Products</h2>
+
+    <!-- Product 1 -->
+    <div>
+      <h3>1) Classic Denim Jeans — ₹499</h3>
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=60" alt="T-shirt" width="300">
+      <p>Comfortable cotton t-shirt. Size options available on checkout comments.</p>
+      <label>
+        <input type="checkbox" name="product1_selected" value="Classic T-Shirt - ₹499">
+        Add to cart
+      </label>
+      <br>
+      <label>Quantity: <input type="number" name="product1_qty" value="1" min="1"></label>
+    </div>
+    <hr>
+
+    <!-- Product 2 -->
+    <div>
+      <h3>2) Wireless Headphones — ₹2499</h3>
+      <p>Over-ear wireless headphones with good battery life.</p>
+      <label>
+        <input type="checkbox" name="product2_selected" value="Wireless Headphones - ₹2499">
+        Add to cart
+      </label>
+      <br>
+      <label>Quantity: <input type="number" name="product2_qty" value="1" min="1"></label>
+    </div>
+    <hr>
+
+    <!-- Product 3 -->
+    <div>
+      <h3>3) Handmade Ceramic Mug — ₹799</h3>
+      <p>Handmade mug — perfect for coffee or tea lovers.</p>
+      <label>
+        <input type="checkbox" name="product3_selected" value="Handmade Ceramic Mug - ₹799">
+        Add to cart
+      </label>
+      <br>
+      <label>Quantity: <input type="number" name="product3_qty" value="1" min="1"></label>
+    </div>
+    <hr>
+
+    <!-- Product 4 -->
+    <div>
+      <h3>4) Notebook (A5) — ₹199</h3>
+      <p>Handy A5 notebook for notes and sketches.</p>
+      <label>
+        <input type="checkbox" name="product4_selected" value="Notebook A5 - ₹199">
+        Add to cart
+      </label>
+      <br>
+      <label>Quantity: <input type="number" name="product4_qty" value="1" min="1"></label>
+    </div>
+    <hr>
+
+    <h2>Cart / Buyer Details</h2>
+
+    <p><em>Tip:</em> Only checked products will be included in the order email. Make sure to set the quantities above.</p>
+
+    <label>Full name:<br>
+      <input type="text" name="customer_name" required>
+    </label>
+    <br><br>
+
+    <label>Email address:<br>
+      <input type="email" name="customer_email" required>
+    </label>
+    <br><br>
+
+    <label>Phone number:<br>
+      <input type="tel" name="customer_phone">
+    </label>
+    <br><br>
+
+    <label>Shipping address:<br>
+      <textarea name="shipping_address" rows="4" cols="40" placeholder="Street, City, State, PIN / ZIP" required></textarea>
+    </label>
+    <br><br>
+
+    <label>Additional notes (size, color, gift message):<br>
+      <textarea name="order_notes" rows="3" cols="40" placeholder="Any special instructions"></textarea>
+    </label>
+    <br><br>
+
+    <p>
+      <strong>Order preview:</strong><br>
+      After clicking <em>Checkout — Send Order</em>, your email program should open with a message containing the fields you filled. The store owner email is the one in the form's action (change <code>your-email@example.com</code> to your real email to receive orders).
+    </p>
+
+    <!-- Submit button -->
+    <input type="submit" value="Checkout — Send Order">
+    <input type="reset" value="Clear Form">
+
+  </form>
+
+  <hr>
+  
+</body>
+</html>
